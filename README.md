@@ -68,3 +68,10 @@ If you find the code useful in your research, please consider citing our paper:
   
 # License
 This project is licensed under the terms of the MIT license. 
+
+
+# Evram Tips
+* To download into EC2 
+  ```shell
+    $ wget https://storage.googleapis.com/sfr-vd-bert-research/v1.0_from_BERT_e30.bin
+  ```

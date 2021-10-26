@@ -19,8 +19,8 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 WORK_DIR=/export/share/yuewang/VD-BERT-Clean
 export CHECKPOINT_ROOT=${WORK_DIR}/checkpoints
 export PYTHONPATH=${WORK_DIR}:${PYTHONPATH}
-model_path=${CHECKPOINT_ROOT}/${checkpoint_fn}/model.${epoch}.bin
-
+# model_path=${CHECKPOINT_ROOT}/${checkpoint_fn}/model.${epoch}.bin
+model_path = v1.0_from_BERT_e30.bin
 python vdbert/test_visdial_disc_test.py \
   --model_recover_path ${model_path} \
   --new_segment_ids --enable_butd --visdial_v ${visdial_v} --split ${split} \
